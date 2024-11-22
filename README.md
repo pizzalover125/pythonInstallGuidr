@@ -1,251 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Quickstart Guide</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <style>
-        :root {
-            --primary-color: #2d333b;
-            --secondary-color: #22272e;
-            --text-color: #adbac7;
-            --accent-color: #539bf5;
-            --code-bg: #1c2128;
-            --border-color: #444c56;
-        }
+# ** Python Quickstart Guide with Github Codespaces**
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+Welcome to this Python Quick Start Guide! This guide will help you create a GitHub account, set up a Python project, and start coding—all from your browser.
 
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background: var(--secondary-color);
-            padding: 0;
-        }
+---
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: var(--primary-color);
-            min-height: 100vh;
-            border-radius: 0;
-        }
+## **Step 1: Create a GitHub Account**
 
-        @media (min-width: 900px) {
-            .container {
-                margin: 2rem auto;
-                border-radius: 12px;
-                min-height: auto;
-            }
-        }
+1. **Go to GitHub**  
+   Open [https://github.com](https://github.com) in your web browser.
 
-        h1, h2 {
-            color: #ffffff;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            line-height: 1.3;
-        }
+2. **Sign Up**  
+   - Click on **Sign up**.
+   - Enter your email, create a password, and choose a username.
+   - Follow the steps to verify your account.
 
-        h1 {
-            font-size: 2rem;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 1rem;
-        }
+3. **Log In**  
+   Once your account is created, log in at [https://github.com/login](https://github.com/login).
 
-        h2 {
-            font-size: 1.5rem;
-            margin-top: 3rem;
-        }
+---
 
-        p {
-            margin-bottom: 1rem;
-        }
+## **Step 2: Create a New Repository**
 
-        ol, ul {
-            margin-bottom: 1rem;
-            padding-left: 2rem;
-        }
+1. **Start a New Project**  
+   - After logging in, click on the green **New** button (or go to [https://github.com/new](https://github.com/new)).
+   
+2. **Set Up Your Repository**  
+   - **Repository name**: Type a name for your project (e.g., `my-first-python-project`).
+   - **Description**: Add a short description (optional).
+   - **Visibility**: Choose **Public** or **Private**.
+   - Check the box **Add a README file**.
+   - Click **Create repository**.
 
-        li {
-            margin-bottom: 0.5rem;
-        }
+---
 
-        code {
-            background: var(--code-bg);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            font-family: 'Consolas', 'Monaco', monospace;
-            font-size: 0.9em;
-        }
+## **Step 3: Open Your Project in Codespaces**
 
-        pre {
-            background: var(--code-bg);
-            padding: 1rem;
-            border-radius: 8px;
-            overflow-x: auto;
-            margin: 1rem 0;
-        }
+1. **Find the Codespaces Option**  
+   - On your repository's page, click the green **Code** button.
+   - Select the **Codespaces** tab and click **New Codespace**.
 
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
+2. **Wait for Your Codespace to Load**  
+   - A browser-based code editor will open. This is your Codespace! 🎉
 
-        a:hover {
-            text-decoration: underline;
-        }
+---
 
-        hr {
-            border: none;
-            border-top: 1px solid var(--border-color);
-            margin: 2rem 0;
-        }
+## **Step 4: Create a Python File**
 
-        strong {
-            color: #ffffff;
-        }
+1. **Create a New File**  
+   - In the file explorer on the left, right-click and select **New File**.
+   - Name your file `hello.py`.
 
-        .step-number {
-            display: inline-block;
-            background: var(--accent-color);
-            color: var(--primary-color);
-            width: 24px;
-            height: 24px;
-            line-height: 24px;
-            text-align: center;
-            border-radius: 50%;
-            margin-right: 8px;
-            font-weight: bold;
-            font-size: 0.9em;
-        }
+2. **Write Your First Code**  
+   - Double-click `hello.py` to open it.
+   - Type the following code:
+     ```python
+     print("Hello, world!")
+     ```
 
-        .congratulations {
-            background: rgba(83, 155, 245, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--accent-color);
-            margin: 2rem 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Python Quickstart Guide with Github Codespaces</h1>
-        <p>Welcome to this Python Quick Start Guide! This guide will help you create a GitHub account, set up a Python project, and start coding—all from your browser.</p>
+3. **Run Your Code**  
+   - Right-click anywhere in the editor and select **Run Python File**.
+   - You’ll see the message `Hello, world!` in the terminal below.
 
-        <h2><span class="step-number">1</span>Create a GitHub Account</h2>
-        <ol>
-            <li><strong>Go to GitHub</strong><br>
-                Open <a href="https://github.com" target="_blank">https://github.com</a> in your web browser.</li>
-            
-            <li><strong>Sign Up</strong>
-                <ul>
-                    <li>Click on <strong>Sign up</strong></li>
-                    <li>Enter your email, create a password, and choose a username</li>
-                    <li>Follow the steps to verify your account</li>
-                </ul>
-            </li>
-            
-            <li><strong>Log In</strong><br>
-                Once your account is created, log in at <a href="https://github.com/login" target="_blank">https://github.com/login</a></li>
-        </ol>
+---
 
-        <h2><span class="step-number">2</span>Create a New Repository</h2>
-        <ol>
-            <li><strong>Start a New Project</strong>
-                <ul>
-                    <li>After logging in, click on the green <strong>New</strong> button (or go to <a href="https://github.com/new" target="_blank">https://github.com/new</a>)</li>
-                </ul>
-            </li>
-            
-            <li><strong>Set Up Your Repository</strong>
-                <ul>
-                    <li><strong>Repository name</strong>: Type a name for your project (e.g., <code>my-first-python-project</code>)</li>
-                    <li><strong>Description</strong>: Add a short description (optional)</li>
-                    <li><strong>Visibility</strong>: Choose <strong>Public</strong> or <strong>Private</strong></li>
-                    <li>Check the box <strong>Add a README file</strong></li>
-                    <li>Click <strong>Create repository</strong></li>
-                </ul>
-            </li>
-        </ol>
+## **Step 5: Save Your Work**
 
-        <h2><span class="step-number">3</span>Open Your Project in Codespaces</h2>
-        <ol>
-            <li><strong>Find the Codespaces Option</strong>
-                <ul>
-                    <li>On your repository's page, click the green <strong>Code</strong> button</li>
-                    <li>Select the <strong>Codespaces</strong> tab and click <strong>New Codespace</strong></li>
-                </ul>
-            </li>
-            
-            <li><strong>Wait for Your Codespace to Load</strong>
-                <ul>
-                    <li>A browser-based code editor will open. This is your Codespace! 🎉</li>
-                </ul>
-            </li>
-        </ol>
+1. **Save Your Changes**  
+   - GitHub Codespaces automatically saves your code.
 
-        <h2><span class="step-number">4</span>Create a Python File</h2>
-        <ol>
-            <li><strong>Create a New File</strong>
-                <ul>
-                    <li>In the file explorer on the left, right-click and select <strong>New File</strong></li>
-                    <li>Name your file <code>hello.py</code></li>
-                </ul>
-            </li>
-            
-            <li><strong>Write Your First Code</strong>
-                <ul>
-                    <li>Double-click <code>hello.py</code> to open it</li>
-                    <li>Type the following code:</li>
-                </ul>
-                <pre><code class="language-python">print("Hello, world!")</code></pre>
-            </li>
-            
-            <li><strong>Run Your Code</strong>
-                <ul>
-                    <li>Right-click anywhere in the editor and select <strong>Run Python File</strong></li>
-                    <li>You'll see the message <code>Hello, world!</code> in the terminal below</li>
-                </ul>
-            </li>
-        </ol>
+2. **Commit Your Changes**  
+   - Open the **Source Control** tab on the left (the icon looks like a branch).
+   - Type a message (e.g., "Added hello.py") and click the checkmark to commit.
 
-        <h2><span class="step-number">5</span>Save Your Work</h2>
-        <ol>
-            <li><strong>Save Your Changes</strong>
-                <ul>
-                    <li>GitHub Codespaces automatically saves your code</li>
-                </ul>
-            </li>
-            
-            <li><strong>Commit Your Changes</strong>
-                <ul>
-                    <li>Open the <strong>Source Control</strong> tab on the left (the icon looks like a branch)</li>
-                    <li>Type a message (e.g., "Added hello.py") and click the checkmark to commit</li>
-                </ul>
-            </li>
-            
-            <li><strong>Push to GitHub</strong>
-                <ul>
-                    <li>Click the three dots in the Source Control tab</li>
-                    <li>Select <strong>Push</strong> to save your changes to your GitHub repository</li>
-                </ul>
-            </li>
-        </ol>
+3. **Push to GitHub**  
+   - Click the three dots in the Source Control tab.
+   - Select **Push** to save your changes to your GitHub repository.
 
-        <div class="congratulations">
-            <h2 style="margin-top: 0;">Congratulations!</h2>
-            <p style="margin-bottom: 0;">You've created a GitHub account, started a Codespace, and written your first Python program. Keep coding and have fun exploring!</p>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-</body>
-</html>
+---
+
+## **Congratulations!**
+
+You’ve created a GitHub account, started a Codespace, and written your first Python program. Keep coding and have fun exploring! 
+
+---
