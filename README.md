@@ -1,4 +1,4 @@
-# ** Python Quickstart Guide with Github Codespaces**
+# ** Python Quickstart Guide with Github Codespaces **
 
 Welcome to this Python Quick Start Guide! This guide will help you create a GitHub account, set up a Python project, and start coding—all from your browser.
 
